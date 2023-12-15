@@ -1,12 +1,11 @@
 ### Travel Buddy
 
-Apis: Go
-
-Chatbot: Python
-
-Backend: Go
-
-FrontEnd: Vite
+| Subject   | Language |
+| --------- | -------- |
+| Apis      | Go       |
+| Chatbot   | Python   |
+| Backend   | Go       |
+| Front End | Vite     |
 
 ### To Do
 
