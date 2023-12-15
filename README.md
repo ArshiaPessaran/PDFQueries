@@ -1,6 +1,6 @@
 ### Travel Buddy
 
-Apis: Python
+Apis: Go
 
 Chatbot: Python
 
@@ -10,8 +10,8 @@ FrontEnd: Vite
 
 ### To Do
 
-- [] Set Up Backend With AWS
-- [] Build Out Front End UI
-- [] Build Out Chatbot Functionality
-- [] Call from TomTom
-- [] Call from Google Maps
+- [ ] Set Up Backend With AWS
+- [ ] Build Out Front End UI
+- [ ] Build Out Chatbot Functionality
+- [ ] Call from TomTom
+- [ ] Call from Google Maps
