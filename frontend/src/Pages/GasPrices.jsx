@@ -1,4 +1,5 @@
 import NavBar from "../Components/NavBar";
+import { useState } from "react";
 
 function GasCard({ Title, Address, Price }) {
   return (
@@ -13,11 +14,33 @@ function GasCard({ Title, Address, Price }) {
   );
 }
 
+function Filter() {
+  const [maxDistance, setMaxDistance] = useState(10);
+
+  return (
+    <div className="grid grid-cols-2 w-screen lg:w-[50vw] 2xl:w-[30vw] p-8 mx-auto">
+      <p className="col-span-1">Max Distance</p>
+      <div className="flex">
+        <input
+          type="range"
+          value={maxDistance}
+          max={99}
+          min={0}
+          onChange={(event) => setMaxDistance(event.target.value)}
+          className="w-52 accent-gray-500"
+        />
+        <p className="ml-5">{maxDistance} miles</p>
+      </div>
+    </div>
+  );
+}
+
 export default function GasPrices() {
   return (
     <div>
       <NavBar />
-      <div className="mt-[5vh]">
+      <div className="mt-[2vh]">
+        <Filter />
         <GasCard
           Title="Winter Springs Texaco"
           Address="423 West Lake Street, Winter Springs FL"
