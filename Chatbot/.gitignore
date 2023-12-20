@@ -2,4 +2,4 @@
 .venv/
 
 #Ignore API Key
-APIKEY.txt
+APIKEY.py
