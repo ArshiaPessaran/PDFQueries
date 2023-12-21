@@ -56,3 +56,7 @@ select {
 textarea {
   @apply bg-white border outline-none px-3 py-2 rounded shadow-sm;
 }
+
+.white-button {
+  @apply bg-white border border-gray-300 hover:bg-gray-100 px-2 py-0.5 rounded shadow-sm;
+}
