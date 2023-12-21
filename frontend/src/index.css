@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e9eaee;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7f8591;
+  cursor: pointer;
+}
+
 body {
   @apply text-gray-500;
 }
@@ -23,9 +46,13 @@ h3 {
 }
 
 .text-box {
-  @apply bg-white border outline-none px-2 py-1 rounded shadow-sm;
+  @apply bg-white border outline-none px-3 py-1 rounded shadow-sm;
 }
 
 select {
   @apply outline-none
+}
+
+textarea {
+  @apply bg-white border outline-none px-3 py-2 rounded shadow-sm;
 }

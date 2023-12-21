@@ -1,20 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Pages
-import GasPrices from "./Pages/GasPrices.jsx";
-import CurrencyConverter from "./Pages/CurrencyConverter.jsx";
-import AITravelAgent from "./Pages/AITravelAgent.jsx";
+import Account from "./Pages/Account.jsx";
+import About from "./Pages/About.jsx";
+import Home from "./Pages/Home.jsx";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
-  { path: "/gas-prices", element: <GasPrices /> },
-  { path: "/currency-converter", element: <CurrencyConverter /> },
-  { path: "/travel-agent", element: <AITravelAgent /> },
+  { path: "/", element: <Home /> },
+  { path: "/account", element: <Account /> },
+  { path: "/about", element: <About /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

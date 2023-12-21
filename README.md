@@ -21,3 +21,8 @@
 
 - `cd frontend`
 - `npm run dev`
+
+### Running Back End
+
+- `cd flask-server`
+- `python server.py`
